@@ -1,0 +1,68 @@
+/*
+    CREACION 2 MAY 2021
+    POR JUAN CARLOS SANCHEZ
+    VERSION 1.0
+*/     
+
+/*ESTILOS POR IMPORTAR...*/
+@import url('https://fonts.googleapis.com/css2? family = Langosta & display = swap');  
+@font-face {
+    font-family: prueba;
+    src: url(/src/style/Lobster-Regular.ttf);
+}
+
+/*ESTILOS ETIQUETA*/
+a{
+    color: rgb(253, 252, 252);
+    text-decoration: none;
+}
+
+body{
+    background-image: url(../img/fondo_edificio.jpg);
+}
+
+/*ESTILOS POR ID*/        
+#enlaces{
+    display: flex;
+    background-color:#262626
+}
+
+#caja1{
+    position: relative;
+    float: left;
+}
+
+
+/* #letra{
+    margin-right: 30px;
+    
+} */
+
+.letramenu a{
+    font-size:xx-largem;
+    font-family: prueba;
+    color:#A67A44;
+}
+
+/*ESTILOS POR CLASE*/
+
+.boton{
+    color:#A67A44;
+}
+        
+.formitem{
+    margin-bottom: 10px;
+}
+.contenedor {
+    background-color: rgb(2, 150, 59);
+    margin: 30px 20px 30px 20px;
+}
+
+.menu{
+        
+    background-color: white;
+    border-bottom-color: rgb(43, 128, 3);
+    border-bottom-width: 8px;
+    border-bottom-style:solid;
+}
+  
