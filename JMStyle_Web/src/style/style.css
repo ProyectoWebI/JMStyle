@@ -6,6 +6,7 @@
 
 /*ESTILOS POR IMPORTAR...*/
 @import url('https://fonts.googleapis.com/css2? family = Langosta & display = swap');  
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
 @font-face {
     font-family: prueba;
     src: url(/src/style/Lobster-Regular.ttf);
@@ -65,4 +66,68 @@ body{
     border-bottom-width: 8px;
     border-bottom-style:solid;
 }
+
+#tacerca{
+    margin-top: 1%;
+    text-align: center;
+    color: #277233;
+}
+
+#dacerca{
+    width: 80%;
+    margin-left: 10%;
+    margin-bottom: 0px;
+}
+#dosdiv{
+    margin-left: 10%;
+    margin-top: 1%;
+}
+#car{
+    margin-left: 2px;
+    width: 50%;
+}
+#marc{
+    margin: 4% ;
+    margin-left: 20%;
+    width: 370px;
+    height: 170px;
+   
+}
+#pacerca{
+    text-align: justify;
+    margin-bottom: 2%;
+    padding: 5%;
+}
+#control{
+    margin: 2% 20%;
+}
+
+.container span {
+    font-size: 15pt;
+    font-weight: bold;
+    position: relative;
+    font-family: "Fredoka One";
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+  }
+  .container span::before {
+    content: var(--l);
+    position: absolute;
+    transform: scale(1.1);
+    filter: blur(15px);
+  }
+  .container span::after {
+    content: var(--l);
+    position: absolute;
+    height: 200%;
+    width: 300px;
+    top: 80%;
+    left: 0;
+    filter: blur(30px);
+    transform: rotateX(50deg);
+  }
+  .container span:hover {
+    filter: contrast(250%);
+  }
+
   
