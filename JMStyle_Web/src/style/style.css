@@ -88,15 +88,16 @@ body{
 }
 #marc{
     margin: 4% ;
-    margin-left: 20%;
-    width: 370px;
-    height: 170px;
+    margin-left: 1%;
+    width: 550px;
+    height: 230px;
    
 }
 #pacerca{
     text-align: justify;
     margin-bottom: 2%;
     padding: 5%;
+  
 }
 #control{
     margin: 2% 20%;
