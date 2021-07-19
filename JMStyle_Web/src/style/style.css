@@ -130,4 +130,13 @@ body{
     filter: contrast(250%);
   }
 
-  
+  #tamIcon{
+      width: 50px;
+      height: 50px;
+  }
+
+  #footer{
+      margin-top: 10%;
+      display: flex;
+      background-color:#262626
+  }
