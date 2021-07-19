@@ -40,7 +40,7 @@ function formContato(){
 
 function alertaColor(parametro){
     var elemt = parametro;
-    elemt.style = "background-color: rgb(240, 248, 255);"
+    elemt.style = "background-color: rgb(250, 235, 215);"
 }
 
 function defectoColor(parametro){
