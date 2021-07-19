@@ -130,4 +130,7 @@ body{
     filter: contrast(250%);
   }
 
-  
+  #colorCarrito{
+    color: rgb(253, 252, 252);
+    width: 30%;
+}
