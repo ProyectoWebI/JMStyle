@@ -3,7 +3,6 @@
     POR JUAN CARLOS SANCHEZ
     VERSION 1.0
 */     
-
 /*ESTILOS POR IMPORTAR...*/
 @import url('https://fonts.googleapis.com/css2? family = Langosta & display = swap');  
 @import url("https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap");
@@ -11,42 +10,33 @@
     font-family: prueba;
     src: url(/src/style/Lobster-Regular.ttf);
 }
-
 /*ESTILOS ETIQUETA*/
 a{
     color: rgb(253, 252, 252);
     text-decoration: none;
 }
-
 body{
     background-image: url(../img/fondo_edificio.jpg);
 }
-
 /*ESTILOS POR ID*/        
 #enlaces{
     display: flex;
     background-color:#262626
 }
-
 #caja1{
     position: relative;
     float: left;
 }
-
-
 /* #letra{
     margin-right: 30px;
     
 } */
-
 .letramenu a{
     font-size:xx-largem;
     font-family: prueba;
     color:#A67A44;
 }
-
 /*ESTILOS POR CLASE*/
-
 .boton{
     color:#A67A44;
 }
@@ -58,7 +48,6 @@ body{
     background-color: rgb(2, 150, 59);
     margin: 30px 20px 30px 20px;
 }
-
 .menu{
         
     background-color: white;
@@ -66,13 +55,11 @@ body{
     border-bottom-width: 8px;
     border-bottom-style:solid;
 }
-
 #tacerca{
     margin-top: 1%;
     text-align: center;
     color: #277233;
 }
-
 #dacerca{
     width: 80%;
     margin-left: 10%;
@@ -102,7 +89,6 @@ body{
 #control{
     margin: 2% 20%;
 }
-
 .container span {
     font-size: 15pt;
     font-weight: bold;
@@ -130,7 +116,6 @@ body{
   .container span:hover {
     filter: contrast(250%);
   }
-
   #colorCarrito{
     color: rgb(253, 252, 252);
     width: 30%;
@@ -145,74 +130,4 @@ body{
     margin-top: 10%;
     display: flex;
     background-color:#262626
-}
-
-body, html {
-    height: 100%;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-    background: #2f792d;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    /* No Scrollbar */
-    overflow: hidden;
-}
-
-.form-box {
-    width: 300px;
-    padding: 40px;
-    background: #191919;
-    text-align: center;
-}
-
-.form-title {
-    color: #fff;
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-.form-box input[type="text"], .form-box input[type="password"], .form-box button[type="submit"] {
-    border: 0;
-    background: none;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 2px solid #24682f;
-    padding: 14px 10px;
-    width: 200px;
-    outline: none;
-    color: white;
-    border-radius: 24px;
-    transition: 0.25s;
-}
-
-.form-box input[type="text"]:focus, .form-box input[type="password"]:focus {
-    width: 280px;
-    border-color: #298f3f;
-}
-
-.form-box button[type="submit"] {
-    border: 0;
-    background: #339c4e;
-    display: block;
-    margin: 20px auto;
-    text-align: center;
-    border: 2px solid #339c4e;
-    padding: 14px 40px;
-    outline: none;
-    color: white;
-    border-radius: 24px;
-    transition: 0.25s;
-    cursor: pointer;
-}
-
-.form-box button[type="submit"]:hover {
-    background: none;
 }
