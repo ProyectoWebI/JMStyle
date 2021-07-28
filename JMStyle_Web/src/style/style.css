@@ -15,9 +15,9 @@ a{
     color: rgb(253, 252, 252);
     text-decoration: none;
 }
-body{
+/* body{
     background-image: url(../img/fondo_edificio.jpg);
-}
+} */
 /*ESTILOS POR ID*/        
 #enlaces{
     display: flex;
@@ -186,14 +186,18 @@ body{
 
 #login {
     margin: 0;
-    padding: 10%;
+    padding: 05%;
     font-family: sans-serif; 
-    background: #2f792d;
+    /* background: #2f792d; */
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
     justify-content: center;
     align-items: center;
     /* No Scrollbar */
     overflow: hidden;
+}
+
+.flex{
+    display: flex;
 }
