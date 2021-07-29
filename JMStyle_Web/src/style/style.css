@@ -15,9 +15,9 @@ a{
     color: rgb(253, 252, 252);
     text-decoration: none;
 }
-/* body{
+body{
     background-image: url(../img/fondo_edificio.jpg);
-} */
+}
 /*ESTILOS POR ID*/        
 #enlaces{
     display: flex;
@@ -133,7 +133,7 @@ a{
 }
 
 .form-box {
-    width: 300px;
+    width: 500px;
     padding: 40px;
     background: #191919;
     text-align: center;
