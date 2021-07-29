@@ -12,21 +12,65 @@
         integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <link rel="stylesheet" href="../src/style/fontawesome-free-5.15.3-web/css_fa5/all.css">
     <link rel="stylesheet" href="../src/style/style.css">
-    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <script type="text/javascript" src="../js/funciones.js"></script> 
+    <script type="text/javascript" src="../js/funciones.js"></script>
 
 </head>
 
 <body>
-    <header class="text-center">
-        <h4>Registro</h4>
+    <header>
+        <div id="enlaces"> <!--LOGO Y ENLACES  -->
+            <div style=" width:50%; text-align:left; padding: left 20px;">   <!-- LOGO-->
+                <img src="../src/img/logo JMStyle.png" alt="" width="100">
+            </div>
 
+            
+        </div>
+
+        <div class="menu">
+            <!-- MENU-->
+
+            <nav class="navbar navbar-expand-lg letramenu">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="index.html">Inicio</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active" aria-current="page"
+                                    href="../pages/productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="../pages/contactanos.html">Contáctanos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="../pages/acerca.html" id="navbarDropdown">Acerca de</a>
+
+                        </ul>
+                        </li>
+
+                        </ul>
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Buscar productos"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Buscar</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
+        <div class="text-center">
+            <h1>Registro</h1>
+        </div>
         <div class="container">
-            <a href="" id="alerta" class="text-danger"></a>
             <div class="row justify-content-center">
-                <div class="col-md-10">
+                <div class="card w-50 col-md-10 shadow p-2 mb-2 bg-white rounded mt-2">
                     <form id="registro" name="registro" method="GET">
                         <div class="form-group col">
                             <label for="">Nombre: </label>
@@ -54,11 +98,31 @@
                                 placeholder="Opcional">
                         </div>
 
+                        <div>
+                            <label for="">Usuario: </label>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div>
+                            <label for="">Contraseña: </label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+
+
+                        <div>
+                            <label for="">Confirmar Contraseña: </label>
+                            <input type="password" class="form-control" id="password">
+                        </div>
+
                     </form>
                     <br>
                     <br>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-success" id="botonRegis"
+                            onclick="formRegistro()">Registrarse</button>
 
-                    <input type="button" class="btn btn-success center" onclick="formRegistro()" value="Enviar">
+                    </div>
+
 
                 </div>
             </div>

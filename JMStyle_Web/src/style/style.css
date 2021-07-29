@@ -201,3 +201,7 @@ body{
 .flex{
     display: flex;
 }
+
+#botonRegis{
+    width:150px;
+}
