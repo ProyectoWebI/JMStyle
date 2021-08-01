@@ -26,17 +26,17 @@
                 
                 <nav class="navbar navbar-expand-lg letramenu">
                     <div class="container-fluid">
-                      <a class="navbar-brand" href="index.html">Inicio</a>
+                      <a class="navbar-brand" href="index.php">Inicio</a>
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                           <li class="nav-item dropdown">
-                            <a class="nav-link active" aria-current="page" href="pages/productos.html">Productos</a>
+                            <a class="nav-link active" aria-current="page" href="pages/productos.php">Productos</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="pages/contactanos.html">Contáctanos</a>
+                            <a class="nav-link active" aria-current="page" href="pages/contactanos.php">Contáctanos</a>
                           </li>
                           <li class="nav-item">
                             <a class="nav-link active" href="pages/acerca.html" id="navbarDropdown"  >Acerca de</a>
@@ -142,9 +142,9 @@
           <div class="col">
             <div class="col-md-6">
               <nav class="nav flex-column">
-                <a class="nav-link" href="index.html">Inicio</a>
-                <a class="nav-link " aria-current="page" href="pages/productos.html">Productos</a>
-                <a class="nav-link " aria-current="page" href="pages/contactanos.html">Contáctanos
+                <a class="nav-link" href="index.php">Inicio</a>
+                <a class="nav-link " aria-current="page" href="pages/productos.php">Productos</a>
+                <a class="nav-link " aria-current="page" href="pages/contactanos.php">Contáctanos
                   <a class="nav-link " href="pages/acerca.html" id="navbarDropdown">Acerca de
               </nav>
             </div>
