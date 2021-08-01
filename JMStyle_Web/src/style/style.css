@@ -198,10 +198,21 @@ body{
     overflow: hidden;
 }
 
-.flex{
+.d-flex{
     display: flex;
 }
 
 #botonRegis{
     width:150px;
+}
+
+/* img {
+    width: 150px;
+    height: 150px;
+    margin-top: 25px;
+  } */
+
+#menuMargin{
+    margin: 1rem;
+
 }
