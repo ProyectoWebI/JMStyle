@@ -12,6 +12,7 @@
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="../src/style/fontawesome-free-5.15.3-web/css_fa5/all.css">
   <link rel="stylesheet" href="../src/style/style.css">
+  <script type="text/javascript" src="../js/funciones.js"></script>
 </head>
 
 <body>
@@ -27,7 +28,6 @@
           </li>
         </ul>
       </div>
-
       <div>
         <!-- CONTENEDOR HEADER -->
         <div id="enlaces">
@@ -73,96 +73,88 @@
               </div>
             </div>
           </nav>
+
         </div>
 
-        <div style="background-image: url(../src/img/ace.png);" id="dacerca">
-          <div class="container" id="tacerca"><br>
-            <h1 class="display-6" style="margin-left: 2px; text-align: center;">JMSTYLE</h1>
-            <hr>
-          </div>
-          <div id="control">
-            <div>
-              <div class="container">
-                <br><br>
-                <h1 class="display-6" style="margin-left: 2px;">QUIENES SOMOS </h1>
-              </div>
-              <p id="pacerca" class="fw-bold">
-                JM STYLE somos una empresa dedicada a ofrecerte lo mejor en
-                productos de vestuario, colaborando con marcas reconocidas a nivel mundial,
-                porque estamos comprometidos para que nuestros clientes vistan de la mejor manera y a la moda.</p>
-            </div>
-            <div>
-              <div class="container">
-                <br>
-                <h1 class="display-6" style="margin-left: 2px;">MARCAS COLABORADORAS</h1>
-              </div>
-              <div id="marc">
-                <div style="display: flex;" id="dosdiv">
-                  <div class="card" style="width: 15rem; height: 6rem;" id="car">
-                    <img src="../src/img/ad.jpg" class="card-img-top" alt="...">
-                  </div>
-                  <div class="card" style="width: 15rem; height: 6rem;" id="car">
-                    <img src="../src/img/nk.png" class="card-img-top" alt="..." height="100%">
-                  </div>
-                  <div class="card" style="width: 15rem; height: 6rem;" id="car">
-                    <img src="../src/img/aer.jpg" class="card-img-top" alt="..." height="100%">
-                  </div>
-                  <div class="card" style="width: 15rem; height: 6rem;" id="car">
-                    <img src="../src/img/pol.png" class="card-img-top" alt="..." height="100%">
-                  </div>
-                  <div class="card" style="width: 15rem; height: 6rem;" id="car">
-                    <img src="../src/img/lac.png" class="card-img-top" alt="..." height="100%">
-                  </div>
-
-                </div>
-                <div style="display: flex;" id="dosdiv">
-                  <div class="card" style="width: 15rem; height: 6rem;" id="car">
-                    <img src="../src/img/zar.png" class="card-img-top" alt="..." height="100%">
-                  </div>
-                  <div class="card" style="width: 15rem; height: 6rem;" id="car">
-                    <img src="../src/img/cha.png" class="card-img-top" alt="..." height="100%">
-                  </div>
-                  <div class="card" style="width: 15rem; height: 6rem;" id="car">
-                    <img src="../src/img/pum.jpg" class="card-img-top" alt="..." height="100%">
-                  </div>
-                  <div class="card" style="width: 15rem; height: 6rem;" id="car">
-                    <img src="../src/img/undera.png" class="card-img-top" alt="..." height="100%">
-                  </div>
-                  <div class="card" style="width: 15rem; height: 6rem;" id="car">
-                    <img src="../src/img/gucci.jpg" class="card-img-top" alt="..." height="100%">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="container">
-                <br>
-                <h1 class="display-6" style="margin-left: 2px;">MISION</h1>
-              </div>
-              <p id="pacerca" class="fw-bold">
-                Buscar la satisfacción total de nuestros clientes, garantizando un servicio
-                con excelencia, ética y profesionalismo, brindando los mejores productos adecuados a las preferencias.
-              </p>
-            </div>
-            <div>
-              <div class="container">
-                <br>
-                <h1 class="display-6" style="margin-left: 2px;">VISION </h1>
-              </div>
-              <p id="pacerca" class="fw-bold">
-                Posicionarnos en el mercado como una empresa exitosa y socialmente responsable
-                con gran reconocimiento a nivel nacional gracias a nuestros productos, calidad,
-                precios y servicio, siempre respetando los derechos y el trabajo tanto
-                de nuestros colaboradores como de nuestros clientes, para así seguir creciendo
-                y poder ofrecer nuestros productos en todo el interior del país.
-              </p>
-
-            </div>
-          </div>
-        </div>
-        <hr>
       </div>
+
+
+
   </header>
+
+  <main>
+    <div style="margin: 50px ;">
+      <h2 class="text-center">CONTACTANOS</h2>
+      <p class="text-center w-responsive mx-auto mb-5">¿Tienes alguna Pregunta?
+        No dudes en contactarnos directamente.
+      </p>
+
+    </div>
+
+    <div class="container">
+      <a href="" id="alerta" class="text-danger"></a>
+      <div class="row">
+        <div class="col">
+          <form id="contacto" name="contacto" method="GET">
+            <div class="form-group col">
+              <label for="">Nombre: </label>
+              <input id="nombre" class="form-control" type="text">
+            </div>
+            <div>
+              <label for="email">Correo: </label>
+              <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
+                placeholder="Enter email">
+            </div>
+
+            <div>
+              <label for="">Telefono: </label>
+              <input id="telefono" class="form-control" type="tel" placeholder="0000-0000" pattern="[0-9]{4}-[0-9]{4}">
+            </div>
+
+            <div class="form-group purple-border">
+              <label for="">Consulta:</label>
+              <textarea id="consulta" class="form-control" name="Consulta"></textarea>
+            </div>
+          </form>
+
+          <br>
+          <br>
+
+          <input type="button" class="btn btn-success center" onclick="formContato()" value="Enviar">
+
+        </div>
+
+        <div class="col">
+          <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30888.152059915345!2d-87.85350337591268!3d14.597992777798071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6595a3b6d8afe3%3A0x3dab665e36cbd548!2sSiguatepeque%2C%20Honduras!5e0!3m2!1ses!2sus!4v1625805419572!5m2!1ses!2sus"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+        <div>
+          <div>
+            <ul class="nav justify-content-center">
+              <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                <p>Siguatepeque, Honduras</p>
+              </li>
+
+              <li><i class="fas fa-phone fa-2x "></i>
+                <p>+(504) 0000-0000</p>
+              </li>
+
+              <li><i class="fas fa-envelope fa-2x"></i>
+                <p>contact@jmstyle.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="margin: 500px ;">
+    </div>
+  </main>
+
   <footer id="footer" class="letrafooter">
     <div class="container">
       <div class="row">

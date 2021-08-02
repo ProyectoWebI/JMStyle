@@ -12,6 +12,8 @@
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="../src/style/fontawesome-free-5.15.3-web/css_fa5/all.css">
   <link rel="stylesheet" href="../src/style/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
@@ -27,17 +29,18 @@
           </li>
         </ul>
       </div>
-
       <div>
         <!-- CONTENEDOR HEADER -->
         <div id="enlaces">
           <!--LOGO Y ENLACES  -->
-          <div style=" width:50%; text-align:left; padding: left 20px;">
+          <div style=" width:50%; text-align:left; padding-left:  20px;">
             <!-- LOGO-->
             <img src="../src/img/logo JMStyle.png" alt="" width="100">
           </div>
 
-
+          <div style="width:50%; text-align:right; padding-right: 5%; padding-top: 2%;">
+            <a href="../app/login.php"><i id="colorCarrito" class="fas fa-shopping-cart"></i></a>
+          </div>
         </div>
 
         <div class="menu">
@@ -75,94 +78,89 @@
           </nav>
         </div>
 
-        <div style="background-image: url(../src/img/ace.png);" id="dacerca">
-          <div class="container" id="tacerca"><br>
-            <h1 class="display-6" style="margin-left: 2px; text-align: center;">JMSTYLE</h1>
-            <hr>
-          </div>
-          <div id="control">
-            <div>
-              <div class="container">
-                <br><br>
-                <h1 class="display-6" style="margin-left: 2px;">QUIENES SOMOS </h1>
-              </div>
-              <p id="pacerca" class="fw-bold">
-                JM STYLE somos una empresa dedicada a ofrecerte lo mejor en
-                productos de vestuario, colaborando con marcas reconocidas a nivel mundial,
-                porque estamos comprometidos para que nuestros clientes vistan de la mejor manera y a la moda.</p>
-            </div>
-            <div>
-              <div class="container">
-                <br>
-                <h1 class="display-6" style="margin-left: 2px;">MARCAS COLABORADORAS</h1>
-              </div>
-              <div id="marc">
-                <div style="display: flex;" id="dosdiv">
-                  <div class="card" style="width: 15rem; height: 6rem;" id="car">
-                    <img src="../src/img/ad.jpg" class="card-img-top" alt="...">
-                  </div>
-                  <div class="card" style="width: 15rem; height: 6rem;" id="car">
-                    <img src="../src/img/nk.png" class="card-img-top" alt="..." height="100%">
-                  </div>
-                  <div class="card" style="width: 15rem; height: 6rem;" id="car">
-                    <img src="../src/img/aer.jpg" class="card-img-top" alt="..." height="100%">
-                  </div>
-                  <div class="card" style="width: 15rem; height: 6rem;" id="car">
-                    <img src="../src/img/pol.png" class="card-img-top" alt="..." height="100%">
-                  </div>
-                  <div class="card" style="width: 15rem; height: 6rem;" id="car">
-                    <img src="../src/img/lac.png" class="card-img-top" alt="..." height="100%">
-                  </div>
+        <div>
+          <!-- SLIDE-->
 
-                </div>
-                <div style="display: flex;" id="dosdiv">
-                  <div class="card" style="width: 15rem; height: 6rem;" id="car">
-                    <img src="../src/img/zar.png" class="card-img-top" alt="..." height="100%">
-                  </div>
-                  <div class="card" style="width: 15rem; height: 6rem;" id="car">
-                    <img src="../src/img/cha.png" class="card-img-top" alt="..." height="100%">
-                  </div>
-                  <div class="card" style="width: 15rem; height: 6rem;" id="car">
-                    <img src="../src/img/pum.jpg" class="card-img-top" alt="..." height="100%">
-                  </div>
-                  <div class="card" style="width: 15rem; height: 6rem;" id="car">
-                    <img src="../src/img/undera.png" class="card-img-top" alt="..." height="100%">
-                  </div>
-                  <div class="card" style="width: 15rem; height: 6rem;" id="car">
-                    <img src="../src/img/gucci.jpg" class="card-img-top" alt="..." height="100%">
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="container">
-                <br>
-                <h1 class="display-6" style="margin-left: 2px;">MISION</h1>
-              </div>
-              <p id="pacerca" class="fw-bold">
-                Buscar la satisfacción total de nuestros clientes, garantizando un servicio
-                con excelencia, ética y profesionalismo, brindando los mejores productos adecuados a las preferencias.
-              </p>
-            </div>
-            <div>
-              <div class="container">
-                <br>
-                <h1 class="display-6" style="margin-left: 2px;">VISION </h1>
-              </div>
-              <p id="pacerca" class="fw-bold">
-                Posicionarnos en el mercado como una empresa exitosa y socialmente responsable
-                con gran reconocimiento a nivel nacional gracias a nuestros productos, calidad,
-                precios y servicio, siempre respetando los derechos y el trabajo tanto
-                de nuestros colaboradores como de nuestros clientes, para así seguir creciendo
-                y poder ofrecer nuestros productos en todo el interior del país.
-              </p>
-
-            </div>
-          </div>
+          <h1 class="display-6" style="text-align: center; margin: 70px;">Productos disponibles</h1>
         </div>
-        <hr>
       </div>
+      <div style="margin: 80px 30px 30px 30px;">
+        <!--Imagenes-->
+        <section>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="../src/img/Articulos/pantalon_levis.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                  <a href="#" class="btn btn-primary stretched-link">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../src/img/Articulos/vestido_01.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                  <a href="#" class="btn btn-primary stretched-link">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../src/img/Articulos/pantalon_on.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                    additional content.</p>
+                  <a href="#" class="btn btn-primary stretched-link">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../src/img/Articulos/sudadera_0.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                  <a href="#" class="btn btn-primary stretched-link">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../src/img/Articulos/sudadera_02.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                  <a href="#" class="btn btn-primary stretched-link">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../src/img/Articulos/sueter_01.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                  <a href="#" class="btn btn-primary stretched-link">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
   </header>
+
   <footer id="footer" class="letrafooter">
     <div class="container">
       <div class="row">
