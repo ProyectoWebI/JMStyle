@@ -29,7 +29,7 @@
 
         print "<script>
         alert(\"logueado Correctamente.\");
-        window.location='../../pages/productos.php';
+        window.location='../Admin.php';
         </script>";
         include "cerrar_con.php";
     else:
