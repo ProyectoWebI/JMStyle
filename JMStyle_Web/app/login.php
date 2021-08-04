@@ -15,10 +15,14 @@
 </head>
 
 <body >
-    
+
+     
     <?php
+      require('../app/DB/elementos.php');
       include('../app/DB/conn.php');
     ?>
+
+        
     
     <header>
         <div class="menu"> <!-- MENU-->
@@ -65,7 +69,23 @@
             <input type="password" name="pass" placeholder="Password">
             <button type="submit">Login</button>
             <a href="../app/registrarse.php">Registrarse</a>
+
+            <?php
+                if(isset($_GET['sms']))
+                {
+                    $valor = $_GET['sms'];
+                    $objeto = new ElementosLogin();
+                    echo($objeto->mostrarSMS($valor)); 
+                }
+                else
+                {
+                    $valor = 0;
+                }
+        ?>  
+
+          
         </form>
+                       
         </div>
     </div>    
 </main>
