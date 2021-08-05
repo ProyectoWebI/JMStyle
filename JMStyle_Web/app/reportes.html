@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMStyle | Store Online</title>
+    <link rel="shortcut icon" href="../src/img/logo JMStyleV.png" type="image/x-icon">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="../src/style/fontawesome-free-5.15.3-web/css_fa5/all.css">
+    <link rel="stylesheet" href="../src/style/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="borHeader">
+        <div class="d-flex">
+            <div>
+                <img style="width: 150px;" src="../src/img/logo JMStyle.png" alt="">
+            </div>
+
+            <div id="menuMargin" class="col">
+                <div class="well">
+                    <div class="row justify-content-center">
+                        <div class="col-md-5">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                        aria-expanded="false">Productos</a>
+                                        <ul class="nav nav-tabs">
+                                            <li class="nav-item dropdown">
+                                              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                                aria-expanded="false">Productos</a>
+                                              <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="subirProducto.php">Subir Producto</a></li>
+                                                <li>
+                                                  <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="ListarProducto.php">Listar Productos</a></li>
+                                              </ul>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                                                aria-expanded="false">Categorias</a>
+                                              <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="categoria.php">Crear Categoria</a></li>
+                                                <li>
+                                                  <hr class="dropdown-divider">
+                                                </li>
+                                                <li><a class="dropdown-item" href="../pages/listacategoria.php">Listar Categoria</a></li>
+                                              </ul>
+                                            </li>
+                                            <li class="nav-item">
+                                              <a class="nav-link" href="reportes.php">Reportes</a>
+                                            </li>
+                                          </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-7">
+                            <ul class="nav justify-content-end">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                        role="button">
+                                        <i class="fas fa-users-cog"></i></a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Cerrar Sesion</a></li>
+                                        <li><a class="dropdown-item" href="#">Cambiar Contraña</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <br>
+    <main>
+        <div>
+            <div class="row justify-content-center">
+                <div class="col-md-5 form-group">
+                    <label class="control-label">Desde:</label>
+                    <input type="datetime-local" class="form-control input-sm">
+                </div>
+                <div class="col-md-5 form-group">
+                    <label class="control-label">Hasta:</label>
+                    <input type="datetime-local" class="form-control input-sm">
+                </div>
+                <div>
+                    <!--Linea Divisoria-->
+                    <hr style="width: 100%;">
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

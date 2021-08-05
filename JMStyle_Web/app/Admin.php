@@ -21,34 +21,31 @@
       <img style="width: 150px;" src="../src/img/logo JMStyle.png" alt="">
     </div>
     <div id="menuMargin">
-      <ul class="nav nav-tabs">
+    <ul class="nav nav-tabs">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
             aria-expanded="false">Productos</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Subir Producto</a></li>
+            <li><a class="dropdown-item" href="subirProducto.php">Subir Producto</a></li>
             <li>
               <hr class="dropdown-divider">
             </li>
-            <li><a class="dropdown-item" href="#">Listar Productos</a></li>
+            <li><a class="dropdown-item" href="ListarProducto.php">Listar Productos</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
             aria-expanded="false">Categorias</a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Crear Categoria</a></li>
+            <li><a class="dropdown-item" href="categoria.php">Crear Categoria</a></li>
             <li>
               <hr class="dropdown-divider">
             </li>
-            <li><a class="dropdown-item" href="#">Listar Categoria</a></li>
+            <li><a class="dropdown-item" href="../pages/listacategoria.php">Listar Categoria</a></li>
           </ul>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Pedidos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Usuarios</a>
+          <a class="nav-link" href="reportes.php">Reportes</a>
         </li>
       </ul>
     </div>
