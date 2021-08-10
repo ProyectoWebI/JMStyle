@@ -15,6 +15,12 @@
 </head>
 
 <body>
+  <?php
+    require("DB/main.php");
+    $objetoHeader = new elementosMenu();
+    $parametro="producto";
+    echo($objetoHeader->mostrarHeader($parametro));
+  ?>
 
   <header class="d-flex">
     <div>
@@ -54,64 +60,28 @@
       <a href="../app/login.html"><i class="fas fa-shopping-cart"></i></a>
     </div>  
 
+    <?php
+      $busqueda= stdtolower ($_REQUEST["busqueda"]);
+      if(empty($busqueda)){
+        header("location: ListarProducto.php")
+      }
+    ?>
+
+    <form action="buscar.php" method="GET" class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search" value="<?php echo $busqueda; ?>">
+      <button class="btn btn-outline-success" type="submit">Buscar</button>
+    </form>
+
   </header>
   <main>
-    <div class="text-center">
-        
+    <div class="text-center">        
         <h1><i class="fas fa-th-list"></i> Listar Productos</h1>
     </div>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="card w-50 col-md-10 shadow p-2 mb-2 bg-white rounded mt-2">
-                <form id="registro" name="registro" method="GET">
-                    <div class="form-group col">
-                        <label for="">Id Producto: </label>
-                        <input id="idProducto" class="form-control" type="text">
-                    </div>
-                    <div class="form-group col">
-                        <label for="">Producto: </label>
-                        <input id="producto" class="form-control" type="text">
-                    </div>
-
-                    <div>
-                        <label for="">Descripción: </label>
-                        <input id="descripcion" class="form-control" type="tel">
-                    </div>
-
-                    <div>
-                        <label for="">Cantidad: </label>
-                        <input type="text" class="form-control" id="cantidad">
-                    </div>
-
-                    <div>
-                        <label for="">Precio: </label>
-                        <input type="text" class="form-control" id="precio">
-                    </div>
-
-                    <div>
-                        <label for="">Estado: </label>
-                        <input type="text" class="form-control" id="estado">
-                    </div>
-
-                    <div>
-                        <label for="">Foto: </label>
-                        <input type="file"  id="foto">
-                    </div>
-                
-                </form>
-                <br>
-                <br>
-                <div class="text-center">
-                    <button type="submit" class="btn btn-success" id="botonRegis"
-                        onclick="formRegistro()">Guardar</button>
-
-                </div>
-
-
-            </div>
-        </div>
-    </div>
 </main>
+<?php
+  $objetoTabla = new elementosMenu();
+  echo $objetoTabla->tablaProducto();
+?>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
   </script>

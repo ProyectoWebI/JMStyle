@@ -1,6 +1,7 @@
 <?php
 
     class funcionesSQL
+    {
 
         public $tipoUser;
 
@@ -30,3 +31,5 @@
                 echo(" <script>window.location='$enlace';</script> ")
             }
         }
+    }
+?>

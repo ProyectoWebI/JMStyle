@@ -44,8 +44,16 @@
             <li><a class="dropdown-item" href="../pages/listacategoria.php">Listar Categoria</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="reportes.php">Reportes</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+            aria-expanded="false">Reportes</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="pedidos.php">Pedidos</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="../pages/listacategoria.php">Listar Categoria</a></li>
+          </ul>
         </li>
       </ul>
     </div>

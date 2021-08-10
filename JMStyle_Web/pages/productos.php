@@ -18,11 +18,67 @@
 
 <body>
   <header>
-    <div>
+
+    <!-- <div class="collapse navbar-collapse" id="navbarCollapse">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item dropdown">
+          <img src="../src/img/logo JMStyle.png" class="nav-link dropdown-toggle img-fluid" height="70px" width="70px"
+            href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></img>
+          <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+            <table id="lista-carrito" class="table">
+              <thead>
+                <tr>
+                  <th>Imagen</th>
+                  <th>Nombre</th>
+                  <th>Precio</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+
+            <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+            <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar Compra</a>
+
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div> -->
+
+      <div class="navbar" id="navbarCollapse">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown" >
+            <img src="../src/img/logo JMStyle.png" class="nav-link dropdown-toggle img-fluid" height="70px" width="70px"
+            href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></img>
+            <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
+              <table id="lista-carrito" class="table">
+                <thead>
+                  <tr>
+                    <th>Imagen</th>
+                    <th>Nombre</th>
+                    <th>Precio</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+  
+              <a href="#" id="vaciar-carrito" class="btn btn-primary btn-block">Vaciar Carrito</a>
+              <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar Compra</a>
+  
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div>
+      
+
       <div>
         <ul class="nav justify-content-end">
           <li class="nav-item">
-            <a style="text-decoration: none; color: black;" class="nav-link" href="../app/registrarse.php">Registrate</a>
+            <a style="text-decoration: none; color: black;" class="nav-link"
+              href="../app/registrarse.php">Registrate</a>
           </li>
           <li class="nav-item">
             <a style="text-decoration: none; color: black;" class="nav-link" href="../app/login.php">Iniciar Sesion</a>

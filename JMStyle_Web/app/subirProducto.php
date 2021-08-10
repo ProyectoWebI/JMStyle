@@ -63,41 +63,45 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="card w-50 col-md-10 shadow p-2 mb-2 bg-white rounded mt-2">
-                <form id="registro" name="registro" method="GET">
+            <form id="subirProducto" name="subirProducto" method="POST">
                     <div class="form-group col">
                         <label for="">Id Producto: </label>
-                        <input id="idProducto" class="form-control" type="text">
+                        <input id="idProducto" class="form-control" name="idproducto" type="text">
                     </div>
                     <div class="form-group col">
                         <label for="">Producto: </label>
-                        <input id="producto" class="form-control" type="text">
+                        <input id="producto" class="form-control" name="producto"  type="text">
                     </div>
 
                     <div>
                         <label for="">Descripción: </label>
-                        <input id="descripcion" class="form-control" type="tel">
+                        <input id="descripcion" class="form-control" name="descripcion" type="tel">
                     </div>
 
                     <div>
                         <label for="">Cantidad: </label>
-                        <input type="text" class="form-control" id="cantidad">
+                        <input type="text" class="form-control" name="cantidad" id="cantidad">
                     </div>
 
                     <div>
                         <label for="">Precio: </label>
-                        <input type="text" class="form-control" id="precio">
-                    </div>
-
-                    <div>
-                        <label for="">Estado: </label>
-                        <input type="text" class="form-control" id="estado">
+                        <input type="text" class="form-control" name="precio" id="precio">
                     </div>
 
                     <div>
                         <label for="">Foto: </label>
-                        <input type="file"  id="foto">
+                        <input type="file" name="foto"  id="foto">
                     </div>
-                
+
+                    <br>
+                <br>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success" id="botonRegis"
+                    name="subirPro">Guardar</button>          
+                </div>
+                     <?php 
+                        include ("../app/DB/subirProducto.php");
+                     ?>
                 </form>
                 <br>
                 <br>

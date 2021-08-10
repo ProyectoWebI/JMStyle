@@ -56,11 +56,22 @@
 
   </header>
   <main>
-    <div>
-      <div>
-               hola
+
+   <div style="margin-left: 300px; margin-right: 200px; width:60%;background-color: #ededed;" class="mb-3">
+   <h3 style="text-align: center;"><br>CREAR CATEGORIA</h3>
+    <form method="POST" style="margin-left: 200px;" class="mb-3">
+		<h6><br>NOMBRE:</h6>
+    	<input type="text" name="name"  placeholder="Nombre de la categoria">
+		<h6><br>DESCRIPCION:</h6>
+    	<input type="text" name="texto" placeholder="Descripcion"> <br><br><br>
+      <button type="submit" name="register" style="background: #9c9c9c;">GUARDAR</button>
+      <br><br><br><br>
+    </form>
+        <?php 
+        include ("../app/DB/categoria.php");
+        ?>
+
       </div>
-    </div>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
