@@ -12,16 +12,18 @@
     integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
   <link rel="stylesheet" href="../src/style/fontawesome-free-5.15.3-web/css_fa5/all.css">
   <link rel="stylesheet" href="../src/style/style.css">
-  <script type="text/javascript" src="../js/funciones.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
 
 <body>
   <header>
-    <div>
-      <div>
+  
+  <div>
         <ul class="nav justify-content-end">
           <li class="nav-item">
-            <a style="text-decoration: none; color: black;" class="nav-link" href="../app/registrarse.php">Registrate</a>
+            <a style="text-decoration: none; color: black;" class="nav-link"
+              href="../app/registrarse.php">Registrate</a>
           </li>
           <li class="nav-item">
             <a style="text-decoration: none; color: black;" class="nav-link" href="../app/login.php">Iniciar Sesion</a>
@@ -29,15 +31,18 @@
         </ul>
       </div>
       <div>
+
         <!-- CONTENEDOR HEADER -->
         <div id="enlaces">
           <!--LOGO Y ENLACES  -->
-          <div style=" width:50%; text-align:left; padding: left 20px;">
+          <div style=" width:50%; text-align:left; padding-left:  20px;">
             <!-- LOGO-->
-            <img src="../src/img/logo JMStyle.png" alt="" width="100">
+            <img src="../src/img/logo JMStyle.png" width="100">
           </div>
 
-
+          <div style="width:50%; text-align:right; padding-right: 5%; padding-top: 2%;">
+            <a href="../app/login.php"><i id="colorCarrito" class="fas fa-shopping-cart"></i></a>
+          </div>
         </div>
 
         <div class="menu">
@@ -90,89 +95,95 @@
 
       </div>
 
+        <div>
+          <!-- SLIDE-->
+
+          <h1 class="display-6" style="text-align: center; margin: 70px;">Productos disponibles</h1>
+        </div>
+      </div>
+      <div style="margin: 80px 30px 30px 30px;">
+        <!--Imagenes-->
+        <section>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card">
+                <img src="../src/img/Articulos/pantalon_levis.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                  <a href="#" class="btn btn-primary stretched-link">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../src/img/Articulos/vestido_01.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                  <a href="#" class="btn btn-primary stretched-link">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../src/img/Articulos/pantalon_on.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                    additional content.</p>
+                  <a href="#" class="btn btn-primary stretched-link">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../src/img/Articulos/sudadera_0.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                  <a href="#" class="btn btn-primary stretched-link">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../src/img/Articulos/sudadera_02.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                  <a href="#" class="btn btn-primary stretched-link">Comprar</a>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img src="../src/img/Articulos/sueter_01.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to
+                    additional content. This content is a little bit longer.</p>
+                  <a href="#" class="btn btn-primary stretched-link">Comprar</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
 
 
   </header>
-
-  <main>
-    <div style="margin: 50px ;">
-      <h2 class="text-center">CONTACTANOS</h2>
-      <p class="text-center w-responsive mx-auto mb-5">¿Tienes alguna Pregunta?
-        No dudes en contactarnos directamente.
-      </p>
-
-    </div>
-
-    <div class="container">
-      <a href="" id="alerta" class="text-danger"></a>
-      <div class="row">
-        <div class="col">
-          <form id="contacto" name="contacto" method="GET">
-            <div class="form-group col">
-              <label for="">Nombre: </label>
-              <input id="nombre" class="form-control" type="text">
-            </div>
-            <div>
-              <label for="email">Correo: </label>
-              <input type="email" class="form-control" id="email" aria-describedby="emailHelp"
-                placeholder="Enter email">
-            </div>
-
-            <div>
-              <label for="">Telefono: </label>
-              <input id="telefono" class="form-control" type="tel" placeholder="0000-0000" pattern="[0-9]{4}-[0-9]{4}">
-            </div>
-
-            <div class="form-group purple-border">
-              <label for="">Consulta:</label>
-              <textarea id="consulta" class="form-control" name="Consulta"></textarea>
-            </div>
-          </form>
-
-          <br>
-          <br>
-
-          <input type="button" class="btn btn-success center" onclick="formContato()" value="Enviar">
-
-        </div>
-
-        <div class="col">
-          <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30888.152059915345!2d-87.85350337591268!3d14.597992777798071!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6595a3b6d8afe3%3A0x3dab665e36cbd548!2sSiguatepeque%2C%20Honduras!5e0!3m2!1ses!2sus!4v1625805419572!5m2!1ses!2sus"
-              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-        </div>
-        <div>
-          <div>
-            <ul class="nav justify-content-center">
-              <li><i class="fas fa-map-marker-alt fa-2x"></i>
-                <p>Siguatepeque, Honduras</p>
-              </li>
-
-              <li><i class="fas fa-phone fa-2x "></i>
-                <p>+(504) 0000-0000</p>
-              </li>
-
-              <li><i class="fas fa-envelope fa-2x"></i>
-                <p>contact@jmstyle.com</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div style="margin: 500px ;">
-    </div>
-  </main>
 
   <footer id="footer" class="letrafooter">
     <div class="container">
       <div class="row">
         <div class="col-md-4 divBor" style="padding-top: 3rem;">
           <nav class="nav flex-column">
-            <a href="../index.php">Inicio</a>
+          <a href="../index.php">Inicio</a>
             <a href="productos.php">Productos</a>
             <a href="contactanos.php">Contáctanos</a>
             <a href="acerca.html">Acerca de</a>

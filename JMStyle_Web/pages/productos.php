@@ -46,9 +46,9 @@
     </div>
     <div> -->
 
-      <div class="navbar" id="navbarCollapse">
-        <ul class="navbar-nav">
-          <li class="nav-item dropdown" >
+      <!-- <div class="navbar" id="navbarCollapse">
+        <ul class="navbar-nav"> -->
+          <!-- <li class="nav-item dropdown" >
             <img src="../src/img/logo JMStyle.png" class="nav-link dropdown-toggle img-fluid" height="70px" width="70px"
             href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></img>
             <div id="carrito" class="dropdown-menu" aria-labelledby="navbarCollapse">
@@ -68,10 +68,10 @@
               <a href="#" id="procesar-pedido" class="btn btn-danger btn-block">Procesar Compra</a>
   
             </div>
-          </li>
-        </ul>
+          </li> -->
+        <!-- </ul>
       </div>
-      <div>
+      <div> -->
       
 
       <div>
@@ -91,7 +91,7 @@
           <!--LOGO Y ENLACES  -->
           <div style=" width:50%; text-align:left; padding-left:  20px;">
             <!-- LOGO-->
-            <img src="../src/img/logo JMStyle.png" alt="" width="100">
+            <img src="../src/img/logo JMStyle.png" width="100">
           </div>
 
           <div style="width:50%; text-align:right; padding-right: 5%; padding-top: 2%;">
@@ -100,39 +100,54 @@
         </div>
 
         <div class="menu">
-          <!-- MENU-->
+        <!-- MENU-->
 
-          <nav class="navbar navbar-expand-lg letramenu">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="../index.php">Inicio</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item dropdown">
-                    <a class="nav-link active" aria-current="page" href="../pages/productos.php">Productos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="../pages/contactanos.php">Contáctanos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link active" href="../pages/acerca.html" id="navbarDropdown">Acerca de</a>
+        <nav class="navbar navbar-expand-lg letramenu">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="../index.php">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                
+                <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Productos
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                              <li><a class="dropdown-item" href="productos.php">Disponibles</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="prod_Damas.php">Damas</a></li>
+                              <li><a class="dropdown-item" href="prod_Caballeros.php">Caballeros</a></li>
+                              <li><hr class="dropdown-divider"></li>
+                              <li><a class="dropdown-item" href="prod_Accesorios.php">Accesorios</a></li>
+                              <li><a class="dropdown-item" href="prod_Deportivo.php">Deportivo</a></li>
+                              <li><a class="dropdown-item" href="prod_Zapatos.php">Zapatos</a></li>
+                            </ul>
+                          </li>
 
-                </ul>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="contactanos.php">Contáctanos</a>
                 </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="acerca.html" id="navbarDropdown">Acerca de</a>
 
-                </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-              </div>
+              </ul>
+              </li>
+
+              </ul>
+              <form action="app/DB/buscar.php" method="GET" class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Buscar productos" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+              </form>
             </div>
-          </nav>
-        </div>
+          </div>
+        </nav>
+
+      </div>
 
         <div>
           <!-- SLIDE-->
@@ -216,23 +231,22 @@
 
 
   </header>
-
   <footer id="footer" class="letrafooter">
     <div class="container">
       <div class="row">
         <div class="col-md-4 divBor" style="padding-top: 3rem;">
           <nav class="nav flex-column">
-            <a href="index.php">Inicio</a>
-            <a href="pages/productos.php">Productos</a>
-            <a href="pages/contactanos.php">Contáctanos</a>
-            <a href="pages/acerca.html">Acerca de</a>
+            <a href="../index.php">Inicio</a>
+            <a href="productos.php">Productos</a>
+            <a href="contactanos.php">Contáctanos</a>
+            <a href="acerca.html">Acerca de</a>
           </nav>
         </div>
         <!-- enlaces Redes sociales -->
         <div class="col-md-4 divBor text-center" style="padding-top: 5rem;">
-          <img class="aligncenter" id="tamIcon" src="src/img/iconos/fb.png" alt="">
-          <img class="aligncenter" id="tamIcon" src="src/img/iconos/insta.png" alt="">
-          <img class="aligncenter" id="tamIcon" src="src/img/iconos/twitter.png" alt="">
+          <img class="aligncenter" id="tamIcon" src="../src/img/iconos/fb.png" alt="">
+          <img class="aligncenter" id="tamIcon" src="../src/img/iconos/insta.png" alt="">
+          <img class="aligncenter" id="tamIcon" src="../src/img/iconos/twitter.png" alt="">
         </div>
 
         <div class="col-md-4 " style="padding-top: 1rem;">
@@ -255,7 +269,7 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous">
-  </script>
+  </script>  
 </body>
 
 </html>
