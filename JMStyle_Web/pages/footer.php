@@ -1,22 +1,21 @@
-<?php
 
-echo "
-<footer id="footer' class='letrafooter'>
+
+<footer id='footer' class='letrafooter'>
 <div class='container'>
   <div class='row'>
     <div class='col-md-4 divBor' style='padding-top: 3rem;'>
       <nav class='nav flex-column'>
-        <a href='../index.php'>Inicio</a>
+        <a href='..\index.php'>Inicio</a>
         <a href='productos.php'>Productos</a>
         <a href='contactanos.php'>Contáctanos</a>
-        <a href='acerca.html'>Acerca de</a>
+        <a href='acerca.php'>Acerca de</a>
       </nav>
     </div>
     <!-- enlaces Redes sociales -->
     <div class='col-md-4 divBor text-center' style='padding-top: 5rem;'>
-      <img class='aligncenter' id='tamIcon' src='src/img/iconos/fb.png' alt=''>
-      <img class='aligncenter' id='tamIcon' src='src/img/iconos/insta.png' alt=''>
-      <img class='aligncenter' id='tamIcon' src='src/img/iconos/twitter.png' alt=''>
+      <img class='aligncenter' id='tamIcon' src='..\src/img/iconos/fb.png' alt=''>
+      <img class='aligncenter' id='tamIcon' src='..\src/img/iconos/insta.png' alt=''>
+      <img class='aligncenter' id='tamIcon' src='..\src/img/iconos/twitter.png' alt=''>
     </div>
 
     <div class='col-md-4 ' style='padding-top: 1rem;'>
@@ -42,6 +41,3 @@ echo "
     integrity='sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4' crossorigin='anonymous'>
   </script>
 
-";
-
-?>
