@@ -41,20 +41,6 @@
             echo($objeto->eliminar($query, $dir));
         }
 
-        // function guardarProducto(){
-        //     require("funciones.php");
-        //     $idProducto= $_GET['idProducto'];
-        //     $Producto=$_POST['producto'];
-        //     $Descripcion=$_POST['descripcion'];
-        //     $Cantidad=$_POST['cantidad'];
-        //     $Precio=$_POST['precio'];
-        //     $foto=$_POST['foto'];
-        //     $objeto = new funcionesSQL();
-        //     $query = "INSERT INTO (producto,descripcion,cantidad,precio,foto,estado) VALUES ('$Prodcuto','$Descripcion',$Cantidad,$Precio,$foto,1)";
-        //     $dir = "subirProducto.php?sms=1";
-        //     echo($objeto->guardar($query, $dir));
-        // }
-
         // function actualizarSalas(){
         //     require("../../../app/db/funciones.php");
         //     $idSala= $_GET['id'];

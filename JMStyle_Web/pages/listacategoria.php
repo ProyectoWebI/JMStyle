@@ -21,13 +21,12 @@
     $parametro = "categoria";
     echo($objetoHeader->mostrarHeader($parametro));
     ?>
-
   <header class="d-flex">
     <div>
       <img style="width: 150px;" src="../src/img/logo JMStyle.png" alt="">
     </div>
     <div id="menuMargin">
-    <ul class="nav nav-tabs">
+      <ul class="nav nav-tabs">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
             aria-expanded="false">Productos</a>
@@ -50,16 +49,15 @@
             <li><a class="dropdown-item" href="listacategoria.php">Listar Categoria</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="../app/reportes.php">Reportes</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+            aria-expanded="false">Reportes</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="../app/pedidos.php">Pedidos</a></li>
+          </ul>
         </li>
       </ul>
     </div>
-
-    <div style="width:50%; text-align:right; padding-right: 5%; padding-top: 2%;">
-      <a href="../app/login.html"><i class="fas fa-shopping-cart"></i></a>
-    </div>  
-
   </header>
   <main>
     <div>
@@ -76,6 +74,36 @@
 
         </div>
     </div>
+     <!-- exportar -->
+     <div class="container text-center">
+      <div class="well-sm col-sm-12">
+        <div class="btn-group pull-rigth">
+          <form method="post">
+            <button type="submit" id="export_data" name="export_data" value="Export to excel" class="btn btn-info">Exportar a Excel</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <?php
+  if(isset($_POST["export_data"])) {
+    $filename = "reporte_categoria".date('Ymd') . ".xls";
+    //header("Content-Type: application/vnd.ms-excel");
+    //header("Content-Disposition: attachment; filename=$filename");
+    $show_coloumn = false;
+    if(!empty($developer_records)) {
+    foreach($developer_records as $record) {
+    if(!$show_coloumn) {
+    // display field/column names in first row
+    echo implode("t", array_keys($record)) . "n";
+    $show_coloumn = true;
+    }
+    echo implode("t", array_values($record)) . "n";
+    }
+    }
+    exit;
+    }
+  ?>
   </main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">

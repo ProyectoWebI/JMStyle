@@ -76,8 +76,7 @@ class elementosmenu
          <td>$data[precio]</td>
          <td>$data[estado]</td>
          <td class='text-center'>
-         
-         <i class='fas fa-edit border border-success p-2 botoneditar'></i>
+         <a href='..../app/EditarProducto.php?id=$data[id_producto]'><i class='fas fa-edit border border-success p-2 botoneditar'></i></a>
          <a class='botoneliminar' href='../../DB/acciones.php?accion=3&dir=salas&id=$data[id_producto] onclick='return confirm(\"Desea eliminar la $data[producto]\");' >
             <i class='fas fa-trash-alt border border-danger p-2 botoneliminar'></i>
             </a>

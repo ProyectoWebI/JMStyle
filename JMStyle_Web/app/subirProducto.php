@@ -16,12 +16,12 @@
 
 <body>
 
-  <header class="d-flex">
-    <div>
-      <img style="width: 150px;" src="../src/img/logo JMStyle.png" alt="">
+<header class="d-flex">
+<div>
+     <a href="Admin.php"><img style="width: 150px;" src="../src/img/logo JMStyle.png" alt=""></a> 
     </div>
     <div id="menuMargin">
-    <ul class="nav nav-tabs">
+      <ul class="nav nav-tabs">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
             aria-expanded="false">Productos</a>
@@ -44,15 +44,19 @@
             <li><a class="dropdown-item" href="../pages/listacategoria.php">Listar Categoria</a></li>
           </ul>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="reportes.php">Reportes</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+            aria-expanded="false">Reportes</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="pedidos.php">Pedidos</a></li>
+          </ul>
         </li>
       </ul>
     </div>
 
     <div style="width:50%; text-align:right; padding-right: 5%; padding-top: 2%;">
       <a href="../app/login.html"><i class="fas fa-shopping-cart"></i></a>
-    </div>  
+    </div>
 
   </header>
   <main>
@@ -95,10 +99,6 @@
 
                     <br>
                 <br>
-                <div class="text-center">
-                    <button type="submit" class="btn btn-success" id="botonRegis"
-                    name="subirPro">Guardar</button>          
-                </div>
                      <?php 
                         include ("../app/DB/subirProducto.php");
                      ?>

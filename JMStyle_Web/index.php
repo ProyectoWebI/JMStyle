@@ -20,10 +20,10 @@
         <ul class="nav justify-content-end">
           <li class="nav-item">
             <a style="text-decoration: none; color: black;" class="nav-link"
-              href="../app/registrarse.php">Registrate</a>
+              href="app/registrarse.php">Registrate</a>
           </li>
           <li class="nav-item">
-            <a style="text-decoration: none; color: black;" class="nav-link" href="../app/login.php">Iniciar Sesion</a>
+            <a style="text-decoration: none; color: black;" class="nav-link" href="app/login.php">Iniciar Sesion</a>
           </li>
         </ul>
       </div>

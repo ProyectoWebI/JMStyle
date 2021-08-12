@@ -13,10 +13,11 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
    
 </head>
+
 <body>
 <header class="d-flex">
     <div>
-     <a href="Admin.php"><img style="width: 150px;" src="../src/img/logo JMStyle.png" alt=""></a> 
+      <img style="width: 150px;" src="../src/img/logo JMStyle.png" alt="">
     </div>
     <div id="menuMargin">
       <ul class="nav nav-tabs">
@@ -59,35 +60,58 @@
   </header>
   <main>
     <div class="text-center">
-        <h1><i class="fas fa-arrow-circle-up"></i> Crear Categoria</h1>
+        
+        <h1><i class="fas fa-arrow-circle-up"></i> Subir Producto</h1>
     </div>
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="card w-50 col-md-10 shadow p-2 mb-2 bg-white rounded mt-2">
-          <form method="POST">
-          <div class="form-group col">
-                        <label for="">Categoria: </label>
-            <input type="text" class="form-control" name="name" placeholder="Nombre de la categoria">
-</div>
-<div class="form-group col">
-                        <label for="">Descripcion: </label>
-            <input type="text" class="form-control" name="texto" placeholder="Descripcion">
-</div>
-<br>
-<br>
+        <div class="row justify-content-center">
+            <div class="card w-50 col-md-10 shadow p-2 mb-2 bg-white rounded mt-2">
+            <form id="subirProducto" action="DB/editar.php" name="subirProducto" method="POST">
+                    <div class="form-group col">
+                        <label for="">Id Producto: </label>
+                        <input id="idProducto" class="form-control" name="idproducto" type="text">
+                    </div>
+                    <div class="form-group col">
+                        <label for="">Producto: </label>
+                        <input id="producto" class="form-control" name="producto"  type="text">
+                    </div>
 
-<div class="text-center">
-            <button class="btn btn-success" type="submit" name="register">Guardar</button>
-</div>
-          </form>
-          <?php 
-        include ("../app/DB/categoria.php");
-        ?>
+                    <div>
+                        <label for="">Descripción: </label>
+                        <input id="descripcion" class="form-control" name="descripcion" type="tel">
+                    </div>
 
+                    <div>
+                        <label for="">Cantidad: </label>
+                        <input type="text" class="form-control" name="cantidad" id="cantidad">
+                    </div>
+
+                    <div>
+                        <label for="">Precio: </label>
+                        <input type="text" class="form-control" name="precio" id="precio">
+                    </div>
+
+                    <div>
+                        <label for="">Foto: </label>
+                        <input type="file" name="foto"  id="foto">
+                    </div>
+
+                    <br>
+                <br>
+                </form>
+                <br>
+                <br>
+                <div class="text-center">
+                    <button type="submit" class="btn btn-success" id="botonRegis"
+                        onclick="formRegistro()">Guardar</button>
+
+                </div>
+
+
+            </div>
         </div>
-      </div>
     </div>
-  </main>
+</main>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
   </script>
